@@ -31,7 +31,7 @@
     color: #ff5359;
 }
 body {
-    font-family: "proxima-nova", "AdobeBlank", Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", "Proxima Nova", "AdobeBlank", Helvetica, Arial, sans-serif;
 }
 .feature#details .title {
 	margin: 0 0 40px 0;
@@ -39,7 +39,7 @@ body {
 .feature .title {
 	margin: 0 0 16px 0;
 }
-.cta {
+.cta, .feature-last {
 	text-align: center;
 }
 .cta .btn {
@@ -65,4 +65,10 @@ body {
 .field-shift {
 	left: -9999px;
     position: absolute;
+}
+.normal {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #efefef;
 }
