@@ -72,3 +72,8 @@ body {
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-color: #e5e5e5;
 }
+@media (max-width: 767px) {
+	.container .feature-block:last-child {
+		margin-bottom: 40px;
+	}
+}
