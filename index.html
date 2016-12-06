@@ -199,7 +199,7 @@
             <div class="heading-line-break"></div>
             <h2 class="heading"><small>Support the next generation of makers, dreamers, and inventors by partnering with us.</small></h2>
             <div class="heading-line-break"></div>
-            <a href="https://www.youtube.com/watch?v=R_xB1CyW_zQ" target="_blank" class="btn primary-btn -blue">Sponsorship Information</a>
+            <a href="https://www.youtube.com/watch?v=tK6SnWS2uMU" target="_blank" class="btn primary-btn -blue">Sponsorship Information</a>
 
             <div class="btn-group">
               <button type="button" class="btn primary-btn -success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -355,14 +355,13 @@
         handleScroll();
       });
 
-      function animateScroll(a, t) {
+      function animateScroll(e, t) {
         $('body').addClass('stop-scrolling');var b=$(t);scrolling=true;$(".navbar-nav").children('li').each(function(){if($(t).children('a').first().attr('href')===b.attr('href')){$(t).addClass('active');} else {$(t).removeClass('active');}});$("html, body").stop().animate({scrollTop:$(b.attr("href")).offset().top-$('.primary-navbar').height()},1000,"easeInOutExpo",function(){scrolling=false;$('body').removeClass('stop-scrolling');handleScroll();});
-        if(a !== undefined){a.preventDefault()};
+        if(e !== undefined){e.preventDefault()};
       }
 
       $('.subscribe-cta').click(function(e) {
-        animateScroll(undefined, this);
-        e.preventDefault();
+        animateScroll(e, this);
         $('#subscribe-email').focus();
       });
 
