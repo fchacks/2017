@@ -14,6 +14,9 @@
   color: #ff5359;
   border-bottom-color: #ff5359;
 }
+.navbar-brand {
+	margin-bottom: 6px;
+}
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -76,4 +79,22 @@ body {
 	.container .feature-block:last-child {
 		margin-bottom: 40px;
 	}
+}
+.cta-buttons {
+	line-height: 75px;
+}
+section.first {
+	margin-top: 20px;
+}
+section.first .row {
+	margin-top: 20px;
+}
+section.first .row.first {
+	margin-top: 66px;
+}
+img.sponsor-graphic {
+	width: 700px;
+    margin: 8px 0 30px 14px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.24);
 }

@@ -41,17 +41,17 @@
     <nav class="navbar navbar-fixed-top navbar-fixed-top-transparent primary-navbar -transparent-nav">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="/">
             <img src="img/fchacks/logo-white.png" id="logo" class="img-responsive"/>
           </a>
         </div>
     
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li id="scroll-top-section" class="active"><a class="page-scroll-top" href="#">Welcome</a></li>
-            <li><a class="page-scroll" href="#details">Details</a></li>
-            <li><a class="page-scroll" href="#faq">FAQ</a></li>
-            <li><a class="page-scroll" href="#contact">Contact</a></li>
+            <li id="scroll-top-section" class="active"><a class="page-scroll-top" data-nav="3" href="#">Welcome</a></li>
+            <li><a class="page-scroll" data-nav="2" href="#details">Details</a></li>
+            <li><a class="page-scroll" data-nav="1" href="#faq">FAQ</a></li>
+            <li><a class="page-scroll" data-nav="0" href="#contact">Contact</a></li>
           </ul>
         </div><!-- .navbar-collapse -->
       </div><!-- .container -->
@@ -67,6 +67,7 @@
                <div class="cta-buttons">
                  <a href="#details" class="page-scroll btn primary-btn -blue -lg"><div>Learn More</div></a>
                  <a href="https://fchacks.typeform.com/to/aoRJ3E" target="_blank" class="btn primary-btn -success -lg"><div>Register</div></a>
+   	             <a href="sponsor.html" target="_blank" class="page-scroll btn primary-btn -purple -lg"><div>Potential Sponsor?</div></a>
                </div> <!-- /.cta-buttons -->
              </div> <!-- /.col-lg-12 -->
            </div> <!-- /.row -->
@@ -83,7 +84,7 @@
           <div class="feature-block col-sm-5 col-md-5 col-lg-5">
             <i class="outline-icon icon-pencil-ruler"></i>
             <h3 class="sub-heading">What?</h3>
-            <p>FCHacks is a hackathon for high schoolers in the Pittsburgh region. A hackathon is <span class="highlight">a competition during which students who are interested in exploring computer science team up and build cool projects</span> (apps, games, robots, or whatever they're excited about). FCHacks is open to students with a variety of skill levels—<span class="highlight">no prior knowledge or experience needed</span>. All participants will have access to mentors and materials, and will have a chance to pitch to sponsors and judges and win prizes; beginners will also be provided with computers, workshops, and special prizes.
+            <p>FCHacks is a hackathon for high schoolers in the Pittsburgh region. A hackathon is a competition during which students who are interested in exploring computer science or engineering team up and build cool projects (apps, games, robots, or whatever they're excited about). FCHacks is open to students with a variety of skill levels—no prior knowledge or experience needed. All participants will have access to mentors and materials, and will have a chance to pitch to sponsors and judges and win prizes; beginners will also be provided with computers, workshops, and special prizes.
           </div> <!-- .feature-block -->
 
           <div class="feature-block col-sm-4 col-md-4 col-lg-4">
@@ -199,7 +200,7 @@
             <div class="heading-line-break"></div>
             <h2 class="heading"><small>Support the next generation of makers, dreamers, and inventors by partnering with us.</small></h2>
             <div class="heading-line-break"></div>
-            <a href="https://www.youtube.com/watch?v=tK6SnWS2uMU" target="_blank" class="btn primary-btn -blue">Sponsorship Information</a>
+            <a href="sponsor.html" target="_blank" class="btn primary-btn -blue">Learn More</a>
 
             <div class="btn-group">
               <button type="button" class="btn primary-btn -success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -367,7 +368,7 @@
 
       $(document).ready(function() {
         $(function(){$(".page-scroll-top").bind("click",function(a){$('body').addClass('stop-scrolling');scrolling=true;$(".navbar-nav").children('li').each(function(){$(this).removeClass('active');});$('#scroll-top-section').addClass('active');$("html, body").stop().animate({scrollTop:0},1000,"easeInOutExpo",function(){scrolling=false;$('body').removeClass('stop-scrolling');handleScroll();}),a.preventDefault()})});
-        $(function(){$(".page-scroll").bind("click",function(a){animateScroll(a, this)})});
+        $(function(){$(".page-scroll").bind("click",function(a){if($(this).parent().parent().hasClass("nav")){setActiveSection(parseInt($(this).data('nav')))};animateScroll(a, this)})});
       });
     </script>
     
