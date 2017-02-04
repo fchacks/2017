@@ -14,17 +14,9 @@
 
     <!-- Fonts -->
     <link href="fonts/outlined-icon-set/outlined.css" rel="stylesheet">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400' rel='stylesheet' type='text/css'> -->
 
     <script src="https://use.typekit.net/jlq5iyl.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-    <!-- FontAwesome -->
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-
-    <!-- Flickity -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css"> -->
 
     <!-- HTML5 shim and respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: respond.js doesn't work if you view the page via file:// -->
@@ -35,14 +27,11 @@
   </head>
   <body class="homepage-portfolio">
   
-    <!-- Preload red logo -->
-    <img src="img/fchacks/logo-red.png" class="hidden"/>
-
-    <nav class="navbar navbar-fixed-top navbar-fixed-top-transparent primary-navbar -transparent-nav">
+    <nav class="navbar navbar-fixed-top primary-navbar">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="/">
-            <img src="img/fchacks/logo-white.png" id="logo" class="img-responsive"/>
+            <img src="img/fchacks/logo-red.png" id="logo" class="img-responsive"/>
           </a>
         </div>
     
@@ -270,16 +259,6 @@
 
     <!-- Load main js -->
     <script src="js/main.min.js"></script>
-
-    <!-- Flickity -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script> -->
-
-    <!-- Load custom Flickity -->
-    <!-- <script src="js/flickity-settings.min.js"></script> -->
-
-    <!-- Load custom shuffle -->
-    <!-- <script src="js/portfolio-shuffle.min.js"></script> -->
-
     <script>
       var scrolling = false;
 
@@ -294,14 +273,6 @@
       }
 
       function handleScroll() {
-        if ($(".navbar-fixed-top-transparent").offset().top > 50) {
-          $(".navbar-fixed-top").removeClass("-transparent-nav");
-          $("#logo").attr('src','img/fchacks/logo-red.png');   
-        } else {
-          $(".navbar-fixed-top").addClass("-transparent-nav");
-          $("#logo").attr('src','img/fchacks/logo-white.png');
-        }
-
         if (!scrolling) {
           var nav_height = $('.primary-navbar').height();
           var a = $(window).scrollTop();
