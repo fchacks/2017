@@ -53,6 +53,20 @@ body {
 	line-height: 1.4;
 	font-size: 20px;
 }
+.cta .callout {
+    padding: 6px 8px;
+    border-radius: 5px;
+    background: #25364a;
+    margin: 0 2px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+	text-decoration: none;
+}
+.cta .callout:hover, .cta .callout:active {
+	color: white;
+	background: #364f6c;
+}
 .heading-line-break, .footer-line-break {
 	margin-top: 7px;
 }
