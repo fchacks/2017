@@ -25,7 +25,7 @@
     background-image: url(../img/fchacks/background.png);
 }
 .masthead .btn, .cta .btn {
-    margin-right: 14px;
+    margin-right: 16px;
 }
 .masthead .btn:last-child, .cta .btn:last-child {
     margin-right: 0;
@@ -93,8 +93,12 @@ section.first .row.first {
 	margin-top: 66px;
 }
 img.sponsor-graphic {
-	width: 700px;
-    margin: 8px 0 30px 14px;
+    margin: 16px auto 30px auto;
+    max-width: 90%;
     border: 1px solid black;
     box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.24);
+}
+.primary-btn {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
 }
