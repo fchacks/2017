@@ -65,6 +65,8 @@ body {
 }
 .cta .callout:hover, .cta .callout:active {
 	color: white;
+}
+.cta .callout:hover {
 	background: #364f6c;
 }
 .heading-line-break, .footer-line-break {
