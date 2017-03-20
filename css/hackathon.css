@@ -118,3 +118,14 @@ img.sponsor-graphic {
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
+.row.sponsors {
+	margin-top: 40px;
+}
+.sponsors a img {
+	transition: all .2s ease-in-out;
+	width: 100%;
+}
+.sponsors a:hover img, .sponsors a:focus img {
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+}
