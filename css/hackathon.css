@@ -121,11 +121,11 @@ img.sponsor-graphic {
 .row.sponsors {
 	margin-top: 40px;
 }
-.sponsors a img {
+.sponsors a img, .organizers a img {
 	transition: all .2s ease-in-out;
 	width: 100%;
 }
-.sponsors a:hover img, .sponsors a:focus img {
+.sponsors a:hover img, .sponsors a:focus img, .organizers a:hover img, .organizers a:focus img {
 	opacity: 0.8;
     filter: alpha(opacity=80);
 }
